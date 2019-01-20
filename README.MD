@@ -19,7 +19,7 @@ You will need to download nodejs onto your local machine which comes bundled wit
 For more information go to https://www.npmjs.com/.
 
 ## Development Web Server
-The development web server of choice is Express. There is an Express server script found in the buildScripts folder called [srcSerer.js](./buildScripts/srcServer.js).
+The development web server of choice is Express. There is an Express server script found in the buildScripts folder called [srcServer.js](./buildScripts/srcServer.js).
 
 For more information go to https://expressjs.com/.
 
@@ -43,7 +43,7 @@ The [webpack config](./webpack.config.dev.js) is found at the root. The config h
 For more information go to https://webpack.js.org/concepts/.
 
 ## Linting
-For linting this kit uses eslint. The [eslint config](./eslingrc.json) uses the eslint recommended presets which can be tweaked via the rules section. This kit is set up to run lint manually via the lint script in the package.json file and via the npm start script using eslint-watch.
+For linting this kit uses eslint. The [eslint config](./eslintrc.json) uses the eslint recommended presets which can be tweaked via the rules section. This kit is set up to run lint manually via the lint script in the package.json file and via the npm start script using eslint-watch.
 
 If you are using an eslint plug-in through your editor it will most likely cause issues and should be disabled.
 
@@ -65,5 +65,8 @@ This kit is set up with the following testing set up
 * When are tests run?
   * On save
 
+## Continuous Integration
+This kit is set up to use Travis CI for continuous integration.
 
+For more information go to https://travis-ci.org/
 
