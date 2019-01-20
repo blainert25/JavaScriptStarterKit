@@ -14,8 +14,8 @@ install:
 # Post-install test scripts
 test_script:
   #Output useful info for debbugging.
-  -- node --version
-  -- npm --version
+  - node --version
+  - npm --version
   #run tests
   - npm test
 
