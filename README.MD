@@ -66,7 +66,23 @@ This kit is set up with the following testing set up
   * On save
 
 ## Continuous Integration
-This kit is set up to use Travis CI for continuous integration.
+This kit offers two options for continuous integration [Travis CI](https://travis-ci.org/) and [Appveyor](https://www.appveyor.com/).
 
-For more information go to https://travis-ci.org/
+## HTTP Calls
+This kit is currently set up to use Fetch to make HTTP calls to apis. This is encapsulated in the centralized API call layer [userApi.js](./src/api/userApi.js);
 
+For more information about Fetch go to https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API.
+
+## Api Mocking
+This kit uses the following tools to mock an API layer:
+
+1. Declare our schema:
+  - [JSON Schema Faker](https://json-schema-faker.js.org/)
+
+2. Generate Randomn Data
+  - [faker.js](https://www.npmjs.com/package/faker)
+  - [chance.js](https://chancejs.com/)
+  - [randexp](https://www.npmjs.com/package/randexp)
+
+3. Serve Data via API
+  - [JSON Server](https://github.com/typicode/json-server)
